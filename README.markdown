@@ -55,3 +55,4 @@ Assumptions and Design Decisions
 - *BigDecimals*: improving on spec, we use `BigDecimal` number representation
 - *threading*: periodic checker runs in a separate thread. Console and file I/O do not.
 - *logging*: logging via `slf4j` and `logback` is enabled by default. Use custom `logback.xml` to prevent various logging statements.
+- *currency conversions:* currency exchange rates are hardwired into the code (`PaymentTracker`). Dynamic exchange rates are out of scope of this solution.
